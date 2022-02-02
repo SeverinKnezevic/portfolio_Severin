@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Fredoka+One&family=Mogra&family=Monofett&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Stick+No+Bills:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Cormorant+Garamond:wght@600&family=Dongle:wght@400;700&family=Fredoka+One&family=Fuzzy+Bubbles:wght@700&family=Kanit:wght@200;900&family=Mirza:wght@600&family=Mogra&family=Monofett&family=Pacifico&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Short+Stack&family=Sriracha&family=Stick+No+Bills:wght@700&display=swap');:root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
@@ -8,7 +8,7 @@
   --primary-hover-red: #f33501;
 }
 
-body {
+body {  
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -19,6 +19,13 @@ body {
 .ml-auto {
   margin-left: auto!important;
 }
+
+.bg-light {
+  background-color: transparent !important;
+
+}
+
+
 
 /* MENU LINKS  */
 nav a.nav-link {
@@ -47,12 +54,41 @@ nav ul li {
   color: var(--primary-white) !important;
 }
 
+.main-logo {
+  top: 0;
+  /* margin-left: 30px !important; */
+  position: absolute;
+  /* height: 100px; */
+  z-index: 2;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+@media(max-width: 768px){
+  .logo {
+   height: 75px;
+   width: 75px;
+  /* margin-left: 70px !important; */
+  }
+}
+
+
+
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--primary-red);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--primary-red);
+}
+
+@media(max-width: 768px){
+  nav a.nav-link  {
+    text-align: center;
+  }
 }
 
 
@@ -77,13 +113,13 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Otomanopee One', sans-serif;
+font-family: 'Stick No Bills', sans-serif;
   
 }
 
 .main-info h1 {
   color: var(--primary-white);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 @media(max-width: 768px){
@@ -94,8 +130,10 @@ nav ul li {
 /*************************** TYPED TEXT *******************************/
 
 .typed-text {
-  font-size: 2rem;
-  color: var(--primary-white);
+  font-size: 3rem;
+  color: var(--primary-red);
+
+  font-family: 'Mirza', cursive;
 }
 
 @media(max-width: 768px){
@@ -110,13 +148,13 @@ nav ul li {
   border: 1px solid var(--primary-red);
   text-transform: uppercase;
   border-radius: 0;
-  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  padding: 0.625rem 2rem 0.75rem 2rem;
   text-decoration: none;
   color: var(--primary-white);
   margin: 2rem;
   cursor: pointer;
   background-color:transparent;
-
+  font-family: 'Rowdies', cursive;
 }
 
 .btn-main-offer:hover{
