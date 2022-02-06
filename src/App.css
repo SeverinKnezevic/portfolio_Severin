@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Fredoka+One&family=Mogra&family=Monofett&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Stick+No+Bills:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Cormorant+Garamond:wght@600&family=Dongle:wght@400;700&family=Fredoka+One&family=Fuzzy+Bubbles:wght@700&family=Kanit:wght@200;900&family=Mirza:wght@600&family=Mogra&family=Monofett&family=Pacifico&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Short+Stack&family=Sriracha&family=Stick+No+Bills:wght@700&display=swap');:root {
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Cormorant+Garamond:wght@600&family=Dongle:wght@400;700&family=Fredoka+One&family=Fuzzy+Bubbles:wght@700&family=Kanit:wght@200;900&family=Mirza:wght@600&family=Mogra&family=Monofett&family=Pacifico&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Short+Stack&family=Sriracha&family=Stick+No+Bills:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Cormorant+Garamond:wght@600&family=Dongle:wght@400;700&family=Encode+Sans+SC:wght@300&family=Fredoka+One&family=Fuzzy+Bubbles:wght@700&family=Kanit:wght@200;900&family=Mirza:wght@600&family=Mogra&family=Monofett&family=Pacifico&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Short+Stack&family=Source+Code+Pro:wght@300&family=Sriracha&family=Stick+No+Bills:wght@700&display=swap');
+:root {
+
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-transparent-black: rgba(0,0,0,0.7);
+  --primary-transparent-black-hover: rgba(0,0,0,0.8);
 }
 
 body {  
@@ -85,7 +90,7 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-red);
 }
 
-@media(max-width: 768px){
+@media(max-width: 997px){
   nav a.nav-link  {
     text-align: center;
   }
@@ -99,7 +104,7 @@ nav ul li {
   background: url(background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -107,14 +112,13 @@ nav ul li {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 40%;
     bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-font-family: 'Stick No Bills', sans-serif;
-  
+  font-family: 'Stick No Bills', sans-serif;
 }
 
 .main-info h1 {
@@ -126,13 +130,20 @@ font-family: 'Stick No Bills', sans-serif;
   .main-info h1 {
     font-size: 1.7rem !important;
   }
+
+  .main-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 /*************************** TYPED TEXT *******************************/
 
 .typed-text {
   font-size: 3rem;
-  color: var(--primary-red);
-
+  color: red;
   font-family: 'Mirza', cursive;
 }
 
@@ -145,7 +156,7 @@ font-family: 'Stick No Bills', sans-serif;
 /*************************** HEADER MAIN OFFER BUTTON *******************************/
 
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  border: 1px solid red;
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 2rem 0.75rem 2rem;
@@ -160,11 +171,19 @@ font-family: 'Stick No Bills', sans-serif;
 .btn-main-offer:hover{
   text-decoration: none;
   color:var(--primary-white);
-  background-color: var(--primary-hover-red);
+  background-color: red;
   transition: .4s ease-in-out;
+  }
+
+  @media(max-width: 768px){
+    .btn-main-offer {
+      padding: 0.40rem 1rem 0.40rem 1rem;
+      font-size: 0.8rem;
+    }
   }
   
 /*************************** ABOUT ME *******************************/
+
 
 .photo-wrap {
   display: flex;
@@ -176,16 +195,288 @@ font-family: 'Stick No Bills', sans-serif;
   width: 16rem;
   border-radius: 50%;
   padding: .3rem;
-  border: 1px solid var(--primary-red);
+  border: 1px solid red;
+}
+
+.profile-img:hover{
+  border: 2px solid red;
 }
 
 .about-heading {
-  color: var(--primary-red);
+  color: red;
   text-transform: uppercase;
 }
 
 @media(max-width: 468px){
   .profile-img {
     width: 10rem;
+  }
+}
+
+
+/*************************** PROJECTS *******************************/
+
+.projects{
+  background:  url(./images/projects.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(black);
+  text-align: center;
+  padding: 4rem;  
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.projects h1 {
+  color: red;
+  padding: 3rem 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px black;
+}
+
+.projects-content{
+  text-align: center;
+  max-width: 53.125rem;
+  margin: 0 auto 2rem auto;
+  background-color: var(--primary-transparent-black);
+}
+
+.projects-content:hover{
+  background-color: var(--primary-transparent-black-hover);
+}
+
+.myCarousel {
+  color: var(--primary-white);
+  background-color: transparent;
+  margin-top: -6%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 17.875rem;
+  text-justify: auto;
+  height: auto;
+}
+
+.myCarousel h5 {
+  /* text-transform: uppercase;
+  font-weight: 600; */
+  font-family: 'Encode Sans SC', sans-serif;
+  
+}
+
+.myCarousel p {
+  color: gray;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* .carousel-slider{
+  height: 100%;
+  padding-top: 2rem;
+} */
+
+.carousel .slide{
+  height: 100%;
+  padding-top: 2rem;
+}
+
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+.project-image {
+  width: 150px;
+  border-radius: 10%;
+  border: 1px solid var(--primary-hover-red);
+  padding: 0 0.5rem;
+}
+
+/* .carousel .slide img {
+  width: 150px;
+} */
+
+
+
+@media(max-width: 768px){
+  .projects-content {
+    width: 100%;  
+  }
+}
+
+@media(max-width: 768px){
+  .myCarousel {
+    overflow-y: auto;
+    
+  }
+}
+
+
+/*************************** CONTACT ME *******************************/
+
+.contacts {
+
+  background-color: #1a1a1a;
+  padding: 3rem;
+}
+
+.contacts h1 {
+  color: red;
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: #fff;
+}
+
+
+/*************************** INPUTS *******************************/
+
+.contacts input, .contacts textarea{
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 3px solid grey;
+  border-left: 0.1px solid grey;
+  border-right: 3px solid grey;
+  border-radius: 0;
+  color: white;
+  outline: 0 !important;
+  box-shadow: none;
+  top: 0;
+  margin-bottom: 1rem;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+} 
+
+.contacts textarea {
+  height: 9.2rem;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+  background-color: red;
+  border: 3px solid #1a1a1a;
+
+}
+
+.contact-btn:hover{
+  text-decoration: none;
+  color:var(--primary-white);
+  background-color: red;
+  transition: .4s ease-in-out;
+  border: 3px solid white;
+  }
+
+  .success-message {
+    color: green;
+  }
+
+
+/*************************** MEDIA *******************************/
+
+@media(max-width: 768px){
+  .contacts {
+    overflow-x: hidden;
+  }
+
+  .contacts .container {
+    padding: 0 1rem ;
+  } 
+
+  .contacts p {
+    padding: 0 0.4rem ;
+  }
+  
+}
+
+/*************************** FOOTER *******************************/
+
+.footer {
+  color: grey;
+  background-color: black;
+  /* padding: 3rem; */
+}
+
+.footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+
+
+.severin {
+  color: red;
+  font-family: 'Mirza', cursive;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.logo-footer {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:no-drop;
+}
+
+.footer-down{
+  z-index: -6rem;
+}
+
+
+.footer-left a {
+  margin-left: 65%;
+}
+
+
+.copyright {
+  text-align: center;
+}
+
+.copyright b {
+  cursor: pointer;
+}
+
+.d {
+  margin-top: 0%;
+}
+
+@media(max-width: 768px){
+ 
+
+  .footer-left a {
+    margin-left: 0%;
+  }
+
+  .logo-footer {
+    height: 60px;
+    width: 60px;
   }
 }

@@ -3,18 +3,31 @@ import author from '../images/me.jpg';
 
 const AboutMe = () => {
   return (
-    <div className='container py-5'>
-        <div className="row">
+    <div id="about" className='container py-5  aboutme'>
+        <div className="row" >
             <div className="col-lg-6 col-mx-12">
                 <div className="photo-wrap mb-5">
                     <img className='profile-img' src={author} alt="author.."/>
                 </div>
             </div>
             <div className="col-lg-6 col-mx-12">
+                <br />
                 <h1 className='about-heading'>About me</h1>
+                <hr />
+                <br />
                 <h5>SEVERIN KNEŽEVIĆ</h5>
+                <br />
                 <p>
-                    text o autoru..
+                    My name is Severin. Originall hailing from the Croatia but I living in Bosnia and Herzegovina.
+                </p>
+                <p>
+                    I completed my Coputer science studies at the University of Mostar.
+                </p>
+                <p>
+                    During my studies I became acquainted with various tehnologies and development programs.
+                </p>
+                <p>
+                    Contact me for more information!
                 </p>
             </div>
 
