@@ -43,7 +43,7 @@ const Footer = () => {
               </div>
           </div>
       </div>
-      <div className="row copyright footer-copyright">
+      <div className="row copyright footer-copyright container">
       <small> Copyright &copy; <b>SEVERIN KNEŽEVIĆ</b> 2022.</small> <br/>
                     <small>All rights reserved.</small>
       </div>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Fredoka+One&family=Mogra&family=Monofett&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Stick+No+Bills:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Capriola&family=Cormorant+Garamond:wght@600&family=Dongle:wght@400;700&family=Fredoka+One&family=Fuzzy+Bubbles:wght@700&family=Kanit:wght@200;900&family=Mirza:wght@600&family=Mogra&family=Monofett&family=Pacifico&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Short+Stack&family=Sriracha&family=Stick+No+Bills:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Cormorant+Garamond:wght@600&family=Dongle:wght@400;700&family=Encode+Sans+SC:wght@300&family=Fredoka+One&family=Fuzzy+Bubbles:wght@700&family=Kanit:wght@200;900&family=Mirza:wght@600&family=Mogra&family=Monofett&family=Pacifico&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Short+Stack&family=Source+Code+Pro:wght@300&family=Sriracha&family=Stick+No+Bills:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Cormorant+Garamond:wght@600&family=Dongle:wght@400;700&family=Encode+Sans+SC:wght@300&family=Fredoka+One&family=Fuzzy+Bubbles:wght@700&family=Kanit:wght@200;900&family=Kaushan+Script&family=Mirza:wght@600&family=Mogra&family=Monofett&family=Pacifico&family=Permanent+Marker&family=Righteous&family=Roboto+Condensed:wght@300&family=Rowdies:wght@700&family=Short+Stack&family=Source+Code+Pro:wght@300&family=Sriracha&family=Stick+No+Bills:wght@700&display=swap');
 :root {
 
   --primary-white: #fff;
@@ -25,10 +25,10 @@ body {
   margin-left: auto!important;
 }
 
-.bg-light {
+/* .bg-light {
   background-color: transparent !important;
 
-}
+} */
 
 
 
@@ -205,6 +205,10 @@ nav ul li {
 .about-heading {
   color: red;
   text-transform: uppercase;
+}
+
+.professi {
+  font-family: 'Kaushan Script', cursive;
 }
 
 @media(max-width: 468px){
