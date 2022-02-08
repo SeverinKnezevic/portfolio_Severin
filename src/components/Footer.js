@@ -17,9 +17,9 @@ const Footer = () => {
           <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-4 footer-right">
                   
-                    <p className='severin'>SEVERIN KNEŽEVIĆ</p>
+                    <p className='severin'>SEVERIN KNEZEVIC</p>
                     <p><small>Mobile: </small>  <a href="number"> <i>00387 63 619 978</i></a> <br />
-                    <small>Adress:</small> <i>Orašje (Bosnia and Herzegovina)</i> <br />
+                    <small>Adress:</small> <i>Orasje (Bosnia and Herzegovina)</i> <br />
                     <small>Email:</small> <i>knezevicseverin@gmail.com</i></p>
                   </div>
               <div className="col-lg-4 col-md-4 col-sm-4 footer-center">
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
       </div>
       <div className="row copyright footer-copyright container">
-      <small> Copyright &copy; <b>SEVERIN KNEŽEVIĆ</b> 2022.</small> <br/>
+      <small> Copyright &copy; <b>SEVERIN KNEZEVIC</b> 2022.</small> <br/>
                     <small>All rights reserved.</small>
       </div>
     </div>

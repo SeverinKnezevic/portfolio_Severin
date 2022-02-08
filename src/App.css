@@ -13,6 +13,38 @@
   --primary-transparent-black-hover: rgba(0,0,0,0.8);
 }
 
+.loader {
+  text-align: center;
+  /* background-color: var(--primary-transparent-black); */
+  background: url(./images/back-preloader.jpg) no-repeat;
+  display: flex; 
+   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.loader-logo{
+  top: 0;
+  position: absolute;
+  /* right: 37%; */
+}
+
+.loader img {
+    height: 100px;
+    width: 100px;
+}
+
+@media(max-width: 768px){
+  .loader img {
+   height: 75px;
+   width: 75px;
+  /* margin-left: 70px !important; */
+  }
+}
+
 body {  
   font-family: 'Roboto Condensed', sans-serif;
 }

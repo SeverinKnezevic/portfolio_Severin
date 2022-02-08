@@ -10,9 +10,9 @@ const Header = () => {
             <h1>My Name is</h1>
             <h1><Typed className="typed-text"
                 strings={[
-                'SEVERIN KNEŽEVIĆ',
+                'SEVERIN KNEZEVIC',
                 ]}
-                typeSpeed={70}
+                typeSpeed={100}
                 backSpeed={50}
               />
             </h1>
